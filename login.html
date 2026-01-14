@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" href="images/logo.jpeg" type="image/png" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <script src="assets/js/login.js"></script>
+    <style>
+      body {
+        background-image: url("images/back_img.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form_container">
+      <div class="logo_container">
+        <img class="logo" src="images/main-logo.png" alt="Logo" />
+      </div>
+
+      <div class="form-section">
+        <form onsubmit="login(event)">
+          <h2>Login</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <a href="" class="fogot_password">Forgot Password?</a>
+       
+            <input type="submit" value="Login" onclick="validateLogin();"/>
+          <p>New To Cinsphere <a href="#">Sign up Now</a></p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>CineSphere</h3>
+          <p class="para">
+            Your ultimate destination for streaming the best movies, TV shows,
+            and anime. Watch anytime, anywhere.
+          </p>
+        </div>
+
+
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="about.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 CineSphere. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
